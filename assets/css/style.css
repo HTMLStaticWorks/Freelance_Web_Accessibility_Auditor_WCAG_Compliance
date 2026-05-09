@@ -207,7 +207,7 @@ button, input, textarea, select {
 /* Card Component */
 .card {
     background: var(--bg-card);
-    padding: 30px;
+    padding: 0;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-premium);
     transition: var(--transition);
@@ -215,23 +215,27 @@ button, input, textarea, select {
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img,
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border: none;
 }
 
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 30px 60px rgba(0,0,0,0.1);
-}
-
-.card-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: var(--radius-sm);
-    margin-bottom: 20px;
-}
-
-.card-content {
-    flex-grow: 1;
 }
 
 .card-title {
@@ -243,6 +247,7 @@ button, input, textarea, select {
     color: var(--text-muted);
     margin-bottom: 25px;
     font-size: 15px;
+    flex-grow: 1;
 }
 
 .card-footer {
@@ -282,7 +287,19 @@ button, input, textarea, select {
     color: var(--primary);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+}
+
+.logo i {
+    background: var(--primary);
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
 }
 
 .nav-links {
@@ -422,7 +439,7 @@ button, input, textarea, select {
 }
 
 /* Toggle Buttons */
-.theme-toggle, .rtl-toggle {
+.theme-toggle {
     background: rgba(0,0,0,0.05);
     width: 40px;
     height: 40px;
@@ -432,6 +449,25 @@ button, input, textarea, select {
     justify-content: center;
     cursor: pointer;
     font-size: 18px;
+}
+
+.rtl-toggle {
+    background: #fffbf0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #f2e0c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    transition: var(--transition);
+}
+
+.rtl-toggle:hover {
+    background: #f2e0c9;
 }
 
 /* Toast */
@@ -458,4 +494,66 @@ button, input, textarea, select {
 @keyframes slideIn {
     from { transform: translateX(100%); }
     to { transform: translateX(0); }
+}
+/* Accordion / FAQ */
+.faq-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+}
+
+.faq-item {
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+}
+
+.faq-item summary {
+    padding: 20px 25px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: var(--black);
+    user-select: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '\f078';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 14px;
+    color: var(--primary);
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 25px 25px;
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.faq-item[open] {
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
 }

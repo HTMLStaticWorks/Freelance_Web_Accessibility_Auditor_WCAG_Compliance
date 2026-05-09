@@ -30,18 +30,19 @@ document.addEventListener('DOMContentLoaded', () => {
             const isDark = body.classList.contains('dark-mode');
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
             themeToggle.innerHTML = isDark ? '☀️' : '🌙';
-            showToast(isDark ? 'Dark mode enabled' : 'Light mode enabled');
         });
     }
 
     // RTL Toggle
     const rtlToggle = document.querySelector('.rtl-toggle');
+    const html = document.documentElement;
     if (rtlToggle) {
         rtlToggle.addEventListener('click', () => {
             body.classList.toggle('rtl');
             const isRTL = body.classList.contains('rtl');
+            html.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
             localStorage.setItem('rtl', isRTL ? 'true' : 'false');
-            showToast(isRTL ? 'RTL Layout enabled' : 'LTR Layout enabled');
+            rtlToggle.innerHTML = '<i class="fas fa-right-left"></i>';
         });
     }
 
@@ -52,6 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (localStorage.getItem('rtl') === 'true') {
         body.classList.add('rtl');
+        html.setAttribute('dir', 'rtl');
+        if (rtlToggle) rtlToggle.innerHTML = '<i class="fas fa-right-left"></i>';
+    } else {
+        html.setAttribute('dir', 'ltr');
+        if (rtlToggle) rtlToggle.innerHTML = '<i class="fas fa-right-left"></i>';
     }
 
     // Scroll Reveal
@@ -77,6 +83,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 target.scrollIntoView({
                     behavior: 'smooth'
                 });
+            }
+        });
+    });
+    // Password Visibility Toggle
+    document.querySelectorAll('.password-toggle').forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            const input = this.parentElement.querySelector('input');
+            const icon = this.querySelector('i');
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.replace('fa-eye', 'fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.replace('fa-eye-slash', 'fa-eye');
             }
         });
     });

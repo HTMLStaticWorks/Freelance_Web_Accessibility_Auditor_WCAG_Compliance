@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <title>Pricing | Accessibility Audit Packages & Compliance Plans</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
@@ -16,17 +17,19 @@
                 <a href="index.html" class="logo"><i class="fas fa-universal-access"></i><span>AccessAudit</span></a>
                 <ul class="nav-links">
                     <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="home-2.html" class="nav-link">Home 2</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="services.html" class="nav-link">Services</a></li>
                     <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
 
                     <li><a href="pricing.html" class="nav-link">Pricing</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <button class="theme-toggle">🌙</button>
-                    <button class="rtl-toggle">🌐</button>
-                    <a href="register.html" class="btn btn-primary">Sign Up</a>
+                    <button class="theme-toggle" title="Toggle Theme">🌙</button>
+                    <button class="rtl-toggle" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 15px;">Login</a>
                     <div class="hamburger"><span></span><span></span><span></span></div>
                 </div>
             </nav>
@@ -35,78 +38,98 @@
 
     <main id="main-content">
         <!-- Section 1: Pricing Hero -->
-        <section class="section" style="padding-top: 180px; background: #f8fafc;">
-            <div class="container text-center" data-reveal>
-                <span class="section-subtitle">Transparent Pricing</span>
-                <h1 class="section-title">Invest in Inclusion</h1>
-                <p style="max-width: 600px; margin: 0 auto; color: var(--text-muted);">Choose the right compliance package for your digital product. No hidden fees, just pure accessibility.</p>
+        <section class="section"
+            style="padding: 220px 0 140px; background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('assets/images/pricing-hero.png') center/cover no-repeat; color: white; text-align: center;">
+            <div class="container" data-reveal>
+                <span class="section-subtitle" style="color: #60a5fa;">Transparent Pricing</span>
+                <h1 class="section-title" style="color: white; font-size: 3.8rem; margin-bottom: 25px;">Invest in Inclusion</h1>
+                <p style="max-width: 800px; margin: 0 auto; color: #cbd5e1; font-size: 1.2rem; line-height: 1.6;">
+                    Choose the right compliance package for your digital product.
+                    Clear, upfront investment for lifelong accessibility and global reach.
+                </p>
             </div>
         </section>
 
         <!-- Section 2: Pricing Cards (4 cards) -->
         <section class="section">
             <div class="container">
-                <div class="grid grid-4">
+                <div class="grid grid-4" style="align-items: stretch; margin-top: 40px;">
                     <div class="card" data-reveal>
-                        <div class="text-center" style="margin-bottom: 30px;">
-                            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Starter</h3>
-                            <div style="font-size: 2.5rem; font-weight: 800;">$1,499</div>
-                            <span style="color: var(--text-muted);">Per Audit</span>
+                        <div class="card-content" style="height: 100%; display: flex; flex-direction: column;">
+                            <div class="text-center" style="margin-bottom: 30px;">
+                                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Starter</h3>
+                                <div style="font-size: 2.5rem; font-weight: 800; color: var(--black);">$1,499</div>
+                                <span style="color: var(--text-muted);">Per Audit</span>
+                            </div>
+                            <ul style="margin-bottom: 30px; display: grid; gap: 15px; font-size: 14px; flex-grow: 1;">
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> Landing Page Audit</li>
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> Automated Scan Results</li>
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> Summary Report</li>
+                                <li style="opacity: 0.5;"><i class="fas fa-times" style="margin-right: 8px;"></i> Manual Screen Reader</li>
+                                <li style="opacity: 0.5;"><i class="fas fa-times" style="margin-right: 8px;"></i> VPAT Generation</li>
+                            </ul>
+                            <div style="margin-top: auto;">
+                                <a href="contact.html" class="btn btn-outline" style="width:100%; border-radius: 50px;">Get Started</a>
+                            </div>
                         </div>
-                        <ul style="margin-bottom: 30px; display: grid; gap: 10px; font-size: 14px;">
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Landing Page Audit</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Automated Scan Results</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Summary Report</li>
-                            <li style="opacity: 0.5;"><i class="fas fa-times"></i> Manual Screen Reader</li>
-                            <li style="opacity: 0.5;"><i class="fas fa-times"></i> VPAT Generation</li>
-                        </ul>
-                        <div class="card-footer"><a href="contact.html" class="btn btn-outline" style="width:100%">Get Started</a></div>
                     </div>
-                    <div class="card" style="border: 2px solid var(--primary); transform: scale(1.05); position: relative;" data-reveal>
-                        <span style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; text-transform: uppercase;">Most Popular</span>
-                        <div class="text-center" style="margin-bottom: 30px;">
-                            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Professional</h3>
-                            <div style="font-size: 2.5rem; font-weight: 800;">$3,999</div>
-                            <span style="color: var(--text-muted);">Per Audit</span>
+                    <div class="card" style="border: 2px solid var(--primary); transform: scale(1.05); z-index: 10; overflow: visible;" data-reveal>
+                        <span style="position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 8px 24px; border-radius: 30px; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3); white-space: nowrap; line-height: 1;">Most Popular</span>
+                        <div class="card-content" style="padding-top: 45px; height: 100%; display: flex; flex-direction: column;">
+                            <div class="text-center" style="margin-bottom: 30px;">
+                                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Professional</h3>
+                                <div style="font-size: 2.5rem; font-weight: 800; color: var(--black);">$3,999</div>
+                                <span style="color: var(--text-muted);">Per Audit</span>
+                            </div>
+                            <ul style="margin-bottom: 30px; display: grid; gap: 15px; font-size: 14px; flex-grow: 1;">
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> Full Site Audit (20 Pages)</li>
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> Manual AT Testing</li>
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> Remediation Code Snippets</li>
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> 1 Month Dev Support</li>
+                                <li style="opacity: 0.5;"><i class="fas fa-times" style="margin-right: 8px;"></i> VPAT Generation</li>
+                            </ul>
+                            <div style="margin-top: auto;">
+                                <a href="contact.html" class="btn btn-primary" style="width:100%; border-radius: 50px;">Get Started</a>
+                            </div>
                         </div>
-                        <ul style="margin-bottom: 30px; display: grid; gap: 10px; font-size: 14px;">
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Full Site Audit (20 Pages)</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Manual AT Testing</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Remediation Code Snippets</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> 1 Month Dev Support</li>
-                            <li style="opacity: 0.5;"><i class="fas fa-times"></i> VPAT Generation</li>
-                        </ul>
-                        <div class="card-footer"><a href="contact.html" class="btn btn-primary" style="width:100%">Get Started</a></div>
-                    </div>
-                    <div class="card" data-reveal>
-                        <div class="text-center" style="margin-bottom: 30px;">
-                            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Enterprise</h3>
-                            <div style="font-size: 2.5rem; font-weight: 800;">$8,999</div>
-                            <span style="color: var(--text-muted);">Per Audit</span>
-                        </div>
-                        <ul style="margin-bottom: 30px; display: grid; gap: 10px; font-size: 14px;">
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Full Site + Dashboard</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> VPAT & ADA Documentation</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Multiple AT Testing</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> QA Verification Retest</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> 3 Months Dev Support</li>
-                        </ul>
-                        <div class="card-footer"><a href="contact.html" class="btn btn-outline" style="width:100%">Get Started</a></div>
                     </div>
                     <div class="card" data-reveal>
-                        <div class="text-center" style="margin-bottom: 30px;">
-                            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Continuous</h3>
-                            <div style="font-size: 2.5rem; font-weight: 800;">$1,999</div>
-                            <span style="color: var(--text-muted);">Per Month</span>
+                        <div class="card-content" style="height: 100%; display: flex; flex-direction: column;">
+                            <div class="text-center" style="margin-bottom: 30px;">
+                                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Enterprise</h3>
+                                <div style="font-size: 2.5rem; font-weight: 800; color: var(--black);">$8,999</div>
+                                <span style="color: var(--text-muted);">Per Audit</span>
+                            </div>
+                            <ul style="margin-bottom: 30px; display: grid; gap: 15px; font-size: 14px; flex-grow: 1;">
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> Full Site + Dashboard</li>
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> VPAT & ADA Documentation</li>
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> Multiple AT Testing</li>
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> QA Verification Retest</li>
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> 3 Months Dev Support</li>
+                            </ul>
+                            <div style="margin-top: auto;">
+                                <a href="contact.html" class="btn btn-outline" style="width:100%; border-radius: 50px;">Get Started</a>
+                            </div>
                         </div>
-                        <ul style="margin-bottom: 30px; display: grid; gap: 10px; font-size: 14px;">
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Ongoing Compliance Scans</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Priority Dev Support</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Monthly Status Reports</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Yearly Full Manual Audit</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Dashboard Access</li>
-                        </ul>
-                        <div class="card-footer"><a href="contact.html" class="btn btn-outline" style="width:100%">Subscribe</a></div>
+                    </div>
+                    <div class="card" data-reveal>
+                        <div class="card-content" style="height: 100%; display: flex; flex-direction: column;">
+                            <div class="text-center" style="margin-bottom: 30px;">
+                                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Continuous</h3>
+                                <div style="font-size: 2.5rem; font-weight: 800; color: var(--black);">$1,999</div>
+                                <span style="color: var(--text-muted);">Per Month</span>
+                            </div>
+                            <ul style="margin-bottom: 30px; display: grid; gap: 15px; font-size: 14px; flex-grow: 1;">
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> Ongoing Compliance Scans</li>
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> Priority Dev Support</li>
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> Monthly Status Reports</li>
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> Yearly Full Manual Audit</li>
+                                <li><i class="fas fa-check" style="color: var(--success); margin-right: 8px;"></i> Dashboard Access</li>
+                            </ul>
+                            <div style="margin-top: auto;">
+                                <a href="contact.html" class="btn btn-outline" style="width:100%; border-radius: 50px;">Subscribe</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -165,32 +188,94 @@
                 <div class="text-center" style="margin-bottom: 60px;">
                     <h2 class="section-title">Pricing FAQs</h2>
                 </div>
-                <div style="max-width: 800px; margin: 0 auto; display: grid; gap: 20px;">
-                    <div class="card" data-reveal>
-                        <h4>Can I upgrade my plan later?</h4>
-                        <p class="card-text">Yes, you can upgrade from Starter to Professional at any time. We'll simply credit your previous payment toward the new audit cost.</p>
-                    </div>
-                    <div class="card" data-reveal>
-                        <h4>Do you offer discounts for non-profits?</h4>
-                        <p class="card-text">Absolutely. We offer a 20% discount for registered non-profit organizations and small local charities.</p>
-                    </div>
+                <div class="faq-accordion">
+                    <details class="faq-item" data-reveal>
+                        <summary>Can I upgrade my plan later?</summary>
+                        <div class="faq-answer">
+                            Yes, you can upgrade from Starter to Professional at any time. We'll simply credit your previous payment toward the new audit cost.
+                        </div>
+                    </details>
+                    <details class="faq-item" data-reveal>
+                        <summary>Do you offer discounts for non-profits?</summary>
+                        <div class="faq-answer">
+                            Absolutely. We offer a 20% discount for registered non-profit organizations and small local charities.
+                        </div>
+                    </details>
+                    <details class="faq-item" data-reveal>
+                        <summary>How long does a typical audit take?</summary>
+                        <div class="faq-answer">
+                            A standard audit typically takes 10-15 business days. This varies based on the complexity of your site and the number of pages being audited.
+                        </div>
+                    </details>
+                    <details class="faq-item" data-reveal>
+                        <summary>Do you provide help with the remediation?</summary>
+                        <div class="faq-answer">
+                            Yes! Our Professional and Enterprise plans include detailed remediation code snippets and ongoing developer support to help your team implement fixes correctly.
+                        </div>
+                    </details>
                 </div>
             </div>
         </section>
 
-        <!-- Section 5: CTA Banner -->
-        <section class="section" style="background: var(--primary); color: white; text-align: center;">
-            <div class="container" data-reveal>
-                <h2 style="color: white; margin-bottom: 20px;">Custom Requirements?</h2>
-                <p style="margin-bottom: 30px; opacity: 0.9;">We handle complex audits for huge architectures. Let's talk about your custom needs.</p>
-                <a href="contact.html" class="btn" style="background: white; color: var(--primary); padding: 15px 50px; border-radius: 50px; font-weight: 700;">Get a Custom Quote</a>
-            </div>
-        </section>
+
     </main>
 
     <footer class="footer">
-        <div class="container text-center">
-            <p>&copy; 2026 AccessAudit. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom: 25px;">
+                        <i class="fas fa-universal-access"></i>
+                        <span>AccessAudit</span>
+                    </a>
+                    <p>Dedicated to making the web accessible for everyone. We provide enterprise-level accessibility
+                        audits and remediation guidance.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services-details.html">WCAG Audits</a></li>
+                        <li><a href="services-details.html">ADA Compliance</a></li>
+                        <li><a href="services-details.html">VPAT Reports</a></li>
+                        <li><a href="services-details.html">Remediation</a></li>
+                        <li><a href="services-details.html">UX Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p style="color: #94a3b8; font-size: 14px; margin-bottom: 20px;">Subscribe to get the latest
+                        accessibility updates.</p>
+                    <form style="display: flex; gap: 5px;">
+                        <input type="email" placeholder="Email Address"
+                            style="padding: 10px; border-radius: var(--radius-sm); flex-grow: 1; background: rgba(255,255,255,0.05); color: white; border: 1px solid rgba(255,255,255,0.1);"
+                            required id="footer-email">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px;"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AccessAudit. All rights reserved. | <a href="coming-soon.html">Privacy Policy</a> | <a
+                        href="coming-soon.html">Terms of Service</a></p>
+            </div>
         </div>
     </footer>
     <script src="assets/js/main.js"></script>

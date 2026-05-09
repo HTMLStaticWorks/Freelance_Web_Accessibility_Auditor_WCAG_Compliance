@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <title>Service Details | WCAG 2.1 Audit Deep Dive</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
@@ -16,17 +17,19 @@
                 <a href="index.html" class="logo"><i class="fas fa-universal-access"></i><span>AccessAudit</span></a>
                 <ul class="nav-links">
                     <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="home-2.html" class="nav-link">Home 2</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="services.html" class="nav-link">Services</a></li>
                     <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
 
                     <li><a href="pricing.html" class="nav-link">Pricing</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <button class="theme-toggle">🌙</button>
-                    <button class="rtl-toggle">🌐</button>
-                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <button class="theme-toggle" title="Toggle Theme">🌙</button>
+                    <button class="rtl-toggle" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 15px;">Login</a>
                     <div class="hamburger"><span></span><span></span><span></span></div>
                 </div>
             </nav>
@@ -35,12 +38,36 @@
 
     <main id="main-content">
         <!-- Section 1: Service Hero -->
-        <section class="section" style="padding-top: 180px; background: #f8fafc;">
+        <section class="section" id="service-hero"
+            style="padding: 180px 0 100px; background: #0f172a; color: white; text-align: center;">
             <div class="container" data-reveal>
-                <div style="max-width: 800px;">
-                    <span class="section-subtitle">Deep Dive</span>
-                    <h1 class="section-title">WCAG 2.1 Technical Audit</h1>
-                    <p style="font-size: 1.2rem; color: var(--text-muted);">Our most requested service. A comprehensive, human-led examination of your digital product's accessibility health.</p>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <span class="section-subtitle" style="color: #60a5fa;">Service Details</span>
+                    <h1 class="section-title" id="service-title" style="color: white; font-size: 3.8rem; margin-bottom: 25px;">Technical Accessibility Audit</h1>
+                    <p id="service-description" style="font-size: 1.25rem; color: #cbd5e1; line-height: 1.6;">Our most requested service. A comprehensive, human-led examination of your digital product's accessibility health.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1.5: Visual Showcase -->
+        <section class="section" style="background: #f8fafc; padding: 100px 0;">
+            <div class="container">
+                <div class="grid grid-2" style="align-items: center; gap: 80px;">
+                    <div data-reveal>
+                        <img id="service-image" src="assets/images/service-audit-1.png" alt="Service Showcase" 
+                            style="width: 100%; height: 450px; object-fit: cover; border-radius: 20px;">
+                    </div>
+                    <div data-reveal>
+                        <h2 class="section-title" id="showcase-title" style="margin-bottom: 25px;">Detailed Examination</h2>
+                        <p id="showcase-description" style="font-size: 1.1rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 30px;">
+                            We don't just scratch the surface. Our specialized approach combines expert manual testing with 
+                            industry-leading tools to uncover every potential barrier in your digital infrastructure.
+                        </p>
+                        <div style="display: flex; gap: 20px;">
+                            <a href="contact.html" class="btn btn-primary">Start Your Audit</a>
+                            <a href="pricing.html" class="btn btn-outline">View Pricing</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -123,73 +150,134 @@
                 <div class="text-center" style="margin-bottom: 60px;">
                     <h2 class="section-title">Audit Deliverables</h2>
                 </div>
-                <div class="grid grid-2">
+                <div class="grid grid-2" style="align-items: center; gap: 80px;">
                     <div data-reveal>
-                        <img src="https://images.unsplash.com/photo-1551288049-bbbda5366991?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Audit Report Mockup" style="border-radius: 20px; box-shadow: var(--shadow-lg);">
+                        <img src="assets/images/audit-report-mockup.png" alt="Audit Report Mockup" 
+                            style="width: 100%; border-radius: 30px; box-shadow: var(--shadow-lg);">
                     </div>
-                    <div data-reveal style="display: flex; flex-direction: column; justify-content: center;">
-                        <h3 style="margin-bottom: 20px;">Actionable Remediation Reports</h3>
-                        <p style="margin-bottom: 20px;">We don't just dump a list of errors. Each report includes:</p>
-                        <div style="padding: 15px; background: #f8fafc; border-left: 4px solid var(--primary); margin-bottom: 10px;">
-                            <strong>Code Snippets:</strong> Exact HTML/CSS/JS fixes.
-                        </div>
-                        <div style="padding: 15px; background: #f8fafc; border-left: 4px solid var(--primary); margin-bottom: 10px;">
-                            <strong>Visual Evidence:</strong> Screenshots and video recordings of barriers.
-                        </div>
-                        <div style="padding: 15px; background: #f8fafc; border-left: 4px solid var(--primary);">
-                            <strong>Priority Levels:</strong> Critical, Major, and Minor impact rankings.
+                    <div data-reveal>
+                        <span class="section-subtitle" style="margin-bottom: 15px; display: block;">Tangible Results</span>
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 25px; font-size: 2.5rem;">Actionable Remediation Reports</h2>
+                        <p style="margin-bottom: 30px; color: var(--text-muted); font-size: 1.1rem; line-height: 1.7;">
+                            We don't just dump a list of errors. Our specialized reports provide a clear, technical roadmap 
+                            designed to get your product compliant as quickly as possible.
+                        </p>
+                        <div style="display: grid; gap: 15px;">
+                            <div style="padding: 20px; background: white; border-radius: 15px; border-left: 5px solid var(--primary); box-shadow: var(--shadow-sm);">
+                                <strong style="color: var(--primary); display: block; margin-bottom: 5px;">Code Snippets</strong>
+                                <span style="font-size: 14px; color: var(--text-muted);">Exact HTML/CSS/JS fixes ready for your developers.</span>
+                            </div>
+                            <div style="padding: 20px; background: white; border-radius: 15px; border-left: 5px solid var(--primary); box-shadow: var(--shadow-sm);">
+                                <strong style="color: var(--primary); display: block; margin-bottom: 5px;">Visual Evidence</strong>
+                                <span style="font-size: 14px; color: var(--text-muted);">Detailed screenshots and video recordings of every barrier.</span>
+                            </div>
+                            <div style="padding: 20px; background: white; border-radius: 15px; border-left: 5px solid var(--primary); box-shadow: var(--shadow-sm);">
+                                <strong style="color: var(--primary); display: block; margin-bottom: 5px;">Priority Rankings</strong>
+                                <span style="font-size: 14px; color: var(--text-muted);">Clear Critical, Major, and Minor impact classifications.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 5: FAQ Accordion -->
-        <section class="section" style="background: #f1f5f9;">
-            <div class="container">
-                <div class="text-center" style="margin-bottom: 60px;">
-                    <h2 class="section-title">Audit FAQs</h2>
-                </div>
-                <div style="max-width: 800px; margin: 0 auto;">
-                    <div style="background: white; margin-bottom: 15px; border-radius: 10px; overflow: hidden;" data-reveal>
-                        <div style="padding: 20px; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f1f5f9;">
-                            How long does a typical audit take?
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div style="padding: 20px; color: var(--text-muted); font-size: 15px;">
-                            For a medium-sized website (approx. 20-30 pages), a full technical audit typically takes between 10 to 15 business days.
-                        </div>
-                    </div>
-                    <div style="background: white; margin-bottom: 15px; border-radius: 10px; overflow: hidden;" data-reveal>
-                        <div style="padding: 20px; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f1f5f9;">
-                            Do you fix the code yourself?
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div style="padding: 20px; color: var(--text-muted); font-size: 15px;">
-                            We provide detailed remediation guidance and code snippets. While we don't usually implement the fixes directly on your production server, we can work closely with your dev team or offer remediation as a separate service.
-                        </div>
-                    </div>
-                    <div style="background: white; border-radius: 10px; overflow: hidden;" data-reveal>
-                        <div style="padding: 20px; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f1f5f9;">
-                            What happens if we fail the audit?
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div style="padding: 20px; color: var(--text-muted); font-size: 15px;">
-                            An audit isn't a pass/fail test; it's a roadmap to compliance. We identify all barriers and help you fix them until your site meets the WCAG 2.1 AA standards.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
     </main>
 
     <footer class="footer">
         <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom: 25px;">
+                        <i class="fas fa-universal-access"></i>
+                        <span>AccessAudit</span>
+                    </a>
+                    <p>Dedicated to making the web accessible for everyone. We provide enterprise-level accessibility
+                        audits and remediation guidance.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services-details.html">WCAG Audits</a></li>
+                        <li><a href="services-details.html">ADA Compliance</a></li>
+                        <li><a href="services-details.html">VPAT Reports</a></li>
+                        <li><a href="services-details.html">Remediation</a></li>
+                        <li><a href="services-details.html">UX Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p style="color: #94a3b8; font-size: 14px; margin-bottom: 20px;">Subscribe to get the latest
+                        accessibility updates.</p>
+                    <form style="display: flex; gap: 5px;">
+                        <input type="email" placeholder="Email Address"
+                            style="padding: 10px; border-radius: var(--radius-sm); flex-grow: 1; background: rgba(255,255,255,0.05); color: white; border: 1px solid rgba(255,255,255,0.1);"
+                            required id="footer-email">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px;"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 AccessAudit. All rights reserved.</p>
+                <p>&copy; 2026 AccessAudit. All rights reserved. | <a href="coming-soon.html">Privacy Policy</a> | <a
+                        href="coming-soon.html">Terms of Service</a></p>
             </div>
         </div>
     </footer>
+    <script>
+        const serviceData = {
+            'technical': {
+                title: 'Technical Accessibility Audit',
+                description: "Our most requested service. A deep dive into your site's DOM, ARIA implementation, and keyboard focus management.",
+                image: 'assets/images/service-audit-1.png'
+            },
+            'content': {
+                title: 'Semantic Content Audit',
+                description: "Evaluating images, video transcripts, heading structures, and semantic readability for a truly inclusive user experience.",
+                image: 'assets/images/service-audit-2.png'
+            },
+            'mobile': {
+                title: 'Mobile App Accessibility Audit',
+                description: "Accessibility testing for iOS and Android native apps using platform-specific screen readers like VoiceOver and TalkBack.",
+                image: 'assets/images/service-audit-3.png'
+            },
+            'pdf': {
+                title: 'PDF & Document Compliance',
+                description: "Ensuring your downloadable assets and documents meet PDF/UA and WCAG accessibility standards for all users.",
+                image: 'assets/images/service-audit-4.png'
+            }
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const serviceKey = urlParams.get('service') || 'technical';
+        const data = serviceData[serviceKey];
+
+        if (data) {
+            document.getElementById('service-title').textContent = data.title;
+            document.getElementById('service-description').textContent = data.description;
+            document.getElementById('service-image').src = data.image;
+            document.getElementById('service-image').alt = data.title;
+            document.title = `${data.title} | AccessAudit Details`;
+        }
+    </script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/accessibility.js"></script>
 </body>

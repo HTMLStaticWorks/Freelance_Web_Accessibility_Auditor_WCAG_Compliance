@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <title>Enterprise Accessibility Solutions | Premium Audit Dashboard</title>
     
     <!-- CSS -->
@@ -50,18 +51,20 @@
                 
                 <ul class="nav-links">
                     <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="home-2.html" class="nav-link">Home 2</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="services.html" class="nav-link">Services</a></li>
                     <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
 
                     <li><a href="pricing.html" class="nav-link">Pricing</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
                 </ul>
 
                 <div class="nav-actions">
                     <button class="theme-toggle" title="Toggle Theme">🌙</button>
-                    <button class="rtl-toggle" title="Toggle RTL">🌐</button>
-                    <a href="dashboard.html" class="btn btn-primary">Go to Dashboard</a>
+                    <button class="rtl-toggle" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 15px;">Login</a>
                     <div class="hamburger">
                         <span></span>
                         <span></span>
@@ -139,33 +142,33 @@
                     <h2 class="section-title" style="color: white; -webkit-fill-color: white;">Smart Audit Workflow</h2>
                 </div>
                 <div class="grid grid-4">
-                    <div class="glass-card" style="padding: 40px; border-radius: 20px; transition: 0.5s;" data-reveal>
-                        <div style="width: 50px; height: 50px; background: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
-                            <i class="fas fa-globe"></i>
+                    <div class="glass-card" style="padding: 0; border-radius: 20px; transition: 0.5s; overflow: hidden; background: rgba(255,255,255,0.03);" data-reveal>
+                        <img src="assets/images/workflow-1.png" alt="Domain Scan" style="width: 100%; height: 180px; object-fit: cover;">
+                        <div style="padding: 30px;">
+                            <h3 style="color: white;">Domain Scan</h3>
+                            <p style="color: #94a3b8; font-size: 14px; margin-top: 15px;">Automated crawlers map your entire site architecture for potential barriers.</p>
                         </div>
-                        <h3>Domain Scan</h3>
-                        <p style="color: #94a3b8; font-size: 14px; margin-top: 15px;">Automated crawlers map your entire site architecture for potential barriers.</p>
                     </div>
-                    <div class="glass-card" style="padding: 40px; border-radius: 20px; transition: 0.5s;" data-reveal>
-                        <div style="width: 50px; height: 50px; background: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
-                            <i class="fas fa-user-check"></i>
+                    <div class="glass-card" style="padding: 0; border-radius: 20px; transition: 0.5s; overflow: hidden; background: rgba(255,255,255,0.03);" data-reveal>
+                        <img src="assets/images/workflow-2.png" alt="Expert Review" style="width: 100%; height: 180px; object-fit: cover;">
+                        <div style="padding: 30px;">
+                            <h3 style="color: white;">Expert Review</h3>
+                            <p style="color: #94a3b8; font-size: 14px; margin-top: 15px;">Accessibility specialists perform manual testing on high-priority flows.</p>
                         </div>
-                        <h3>Expert Review</h3>
-                        <p style="color: #94a3b8; font-size: 14px; margin-top: 15px;">Accessibility specialists perform manual testing on high-priority flows.</p>
                     </div>
-                    <div class="glass-card" style="padding: 40px; border-radius: 20px; transition: 0.5s;" data-reveal>
-                        <div style="width: 50px; height: 50px; background: var(--success); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
-                            <i class="fas fa-code-branch"></i>
+                    <div class="glass-card" style="padding: 0; border-radius: 20px; transition: 0.5s; overflow: hidden; background: rgba(255,255,255,0.03);" data-reveal>
+                        <img src="assets/images/workflow-3.png" alt="Dev Integration" style="width: 100%; height: 180px; object-fit: cover;">
+                        <div style="padding: 30px;">
+                            <h3 style="color: white;">Dev Integration</h3>
+                            <p style="color: #94a3b8; font-size: 14px; margin-top: 15px;">Export issues directly to GitHub or Jira with code fix recommendations.</p>
                         </div>
-                        <h3>Dev Integration</h3>
-                        <p style="color: #94a3b8; font-size: 14px; margin-top: 15px;">Export issues directly to GitHub or Jira with code fix recommendations.</p>
                     </div>
-                    <div class="glass-card" style="padding: 40px; border-radius: 20px; transition: 0.5s;" data-reveal>
-                        <div style="width: 50px; height: 50px; background: var(--warning); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
-                            <i class="fas fa-file-shield"></i>
+                    <div class="glass-card" style="padding: 0; border-radius: 20px; transition: 0.5s; overflow: hidden; background: rgba(255,255,255,0.03);" data-reveal>
+                        <img src="assets/images/workflow-4.png" alt="Continuous Monitoring" style="width: 100%; height: 180px; object-fit: cover;">
+                        <div style="padding: 30px;">
+                            <h3 style="color: white;">Continuous Monitoring</h3>
+                            <p style="color: #94a3b8; font-size: 14px; margin-top: 15px;">Stay compliant with ongoing scans as you push new features.</p>
                         </div>
-                        <h3>Continuous Monitoring</h3>
-                        <p style="color: #94a3b8; font-size: 14px; margin-top: 15px;">Stay compliant with ongoing scans as you push new features.</p>
                     </div>
                 </div>
             </div>
@@ -193,46 +196,61 @@
                         </div>
                     </div>
                     <div data-reveal>
-                        <img src="https://images.unsplash.com/photo-1551288049-bbbda5366991?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Data Analytics" style="border-radius: 20px; box-shadow: var(--shadow-lg);">
+                        <img src="assets/images/scale-confidence.png" alt="Enterprise Compliance" style="border-radius: 20px; box-shadow: var(--shadow-lg); width: 100%; height: auto;">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 5: Fix Recommendation Cards (4 cards) -->
+        <!-- Section 5: Automated Remediation Showcase (Split Layout) -->
         <section class="section" style="background-color: #f8fafc;">
             <div class="container">
-                <div class="text-center" style="margin-bottom: 60px;">
-                    <span class="section-subtitle">Instant Fixes</span>
-                    <h2 class="section-title">Common Accessibility Remediation</h2>
-                </div>
-                <div class="grid grid-4">
-                    <div class="card glass-card" data-reveal>
-                        <h3 class="card-title">Color Contrast</h3>
-                        <p class="card-text">Automated CSS adjustments to ensure 4.5:1 ratio for normal text.</p>
-                        <div class="card-footer">
-                            <span style="font-size: 12px; background: var(--primary-light); color: var(--primary); padding: 5px 10px; border-radius: 20px;">Low Effort</span>
-                        </div>
+                <div class="grid grid-2" style="align-items: center; gap: 60px;">
+                    <div data-reveal>
+                        <img src="assets/images/remediation-showcase.png" alt="Automated Remediation"
+                            style="border-radius: 20px; box-shadow: var(--shadow-lg); width: 100%;">
                     </div>
-                    <div class="card glass-card" data-reveal>
-                        <h3 class="card-title">ARIA Labeling</h3>
-                        <p class="card-text">Dynamic injection of descriptive labels for interactive elements.</p>
-                        <div class="card-footer">
-                            <span style="font-size: 12px; background: var(--primary-light); color: var(--primary); padding: 5px 10px; border-radius: 20px;">Medium Effort</span>
-                        </div>
-                    </div>
-                    <div class="card glass-card" data-reveal>
-                        <h3 class="card-title">Focus Management</h3>
-                        <p class="card-text">Smart trap focus scripts for modals and complex navigation menus.</p>
-                        <div class="card-footer">
-                            <span style="font-size: 12px; background: var(--primary-light); color: var(--primary); padding: 5px 10px; border-radius: 20px;">High Impact</span>
-                        </div>
-                    </div>
-                    <div class="card glass-card" data-reveal>
-                        <h3 class="card-title">Alt Text Engine</h3>
-                        <p class="card-text">AI-powered image analysis to suggest descriptive alternative text.</p>
-                        <div class="card-footer">
-                            <span style="font-size: 12px; background: var(--primary-light); color: var(--primary); padding: 5px 10px; border-radius: 20px;">AI Powered</span>
+                    <div data-reveal>
+                        <span class="section-subtitle">Instant Fixes</span>
+                        <h2 class="section-title">Common Accessibility Remediation</h2>
+                        <p style="margin-bottom: 40px; color: var(--text-muted);">Our platform provides automated remediation
+                            scripts that fix critical accessibility barriers in real-time, ensuring your site remains
+                            compliant even between manual audits.</p>
+
+                        <div style="display: grid; gap: 30px;">
+                            <div style="display: flex; gap: 20px;">
+                                <div
+                                    style="width: 50px; height: 50px; background: #dcfce7; color: #15803d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 5px;">Color Contrast Fixer</h4>
+                                    <p style="font-size: 14px; color: var(--text-muted);">Dynamically adjusts background and
+                                        foreground colors to meet WCAG AA standards.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 20px;">
+                                <div
+                                    style="width: 50px; height: 50px; background: #e0e7ff; color: #4338ca; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-keyboard"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 5px;">Aria Labeling Engine</h4>
+                                    <p style="font-size: 14px; color: var(--text-muted);">Automatically adds missing
+                                        descriptive labels to buttons and navigation links.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 20px;">
+                                <div
+                                    style="width: 50px; height: 50px; background: #ffedd5; color: #9a3412; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 5px;">Focus Management</h4>
+                                    <p style="font-size: 14px; color: var(--text-muted);">Ensures keyboard focus is always
+                                        visible and logically managed across the UI.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -265,7 +283,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <a href="index.html" class="logo" style="color: white; margin-bottom: 25px;">
+                    <a href="index.html" class="logo" style="margin-bottom: 25px;">
                         <i class="fas fa-universal-access"></i>
                         <span>AccessAudit</span>
                     </a>
@@ -274,8 +292,6 @@
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
@@ -283,11 +299,13 @@
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
+
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
 
                         <li><a href="pricing.html">Pricing</a></li>
                         <li><a href="contact.html">Contact</a></li>
+
                     </ul>
                 </div>
                 <div>
