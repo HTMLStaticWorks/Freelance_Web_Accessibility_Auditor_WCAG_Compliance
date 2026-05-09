@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Get Your Accessibility Audit Started</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo"><i class="fas fa-universal-access"></i><span>AccessAudit</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle">🌙</button>
+                    <button class="rtl-toggle">🌐</button>
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <div class="hamburger"><span></span><span></span><span></span></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Section 1: Contact Hero -->
+        <section class="section" style="padding-top: 180px; background: #0f172a; color: white;">
+            <div class="container text-center" data-reveal>
+                <span class="section-subtitle" style="color: #60a5fa;">Get in Touch</span>
+                <h1 class="section-title" style="color: white; -webkit-fill-color: white;">Let's Build an Accessible Future</h1>
+                <p style="max-width: 600px; margin: 0 auto; color: #94a3b8;">Have questions about WCAG compliance or need a custom audit? We're here to help.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Contact Information (4 cards) -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-4">
+                    <div class="card text-center" data-reveal>
+                        <i class="fas fa-envelope" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Email Us</h3>
+                        <p class="card-text">hello@accessaudit.com</p>
+                    </div>
+                    <div class="card text-center" data-reveal>
+                        <i class="fas fa-phone-alt" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Call Us</h3>
+                        <p class="card-text">+1 (555) 123-4567</p>
+                    </div>
+                    <div class="card text-center" data-reveal>
+                        <i class="fas fa-map-marker-alt" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Visit Us</h3>
+                        <p class="card-text">123 Accessibility Way, San Francisco</p>
+                    </div>
+                    <div class="card text-center" data-reveal>
+                        <i class="fas fa-clock" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Hours</h3>
+                        <p class="card-text">Mon - Fri: 9am - 6pm EST</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Contact Form -->
+        <section class="section" style="background: #f8fafc;">
+            <div class="container">
+                <div class="grid grid-2" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lg);">
+                    <div data-reveal style="padding: 60px; background: var(--primary); color: white;">
+                        <h2 style="color: white; margin-bottom: 30px;">Request a Quote</h2>
+                        <p style="margin-bottom: 40px; opacity: 0.9;">Tell us about your project and we'll get back to you with a custom proposal within 24 hours.</p>
+                        <ul style="display: grid; gap: 20px;">
+                            <li style="display: flex; gap: 15px;"><i class="fas fa-check-circle"></i> ISO/IEC 40500 standards</li>
+                            <li style="display: flex; gap: 15px;"><i class="fas fa-check-circle"></i> Confidentiality guaranteed</li>
+                            <li style="display: flex; gap: 15px;"><i class="fas fa-check-circle"></i> Technical expertise included</li>
+                        </ul>
+                    </div>
+                    <div data-reveal style="padding: 60px;">
+                        <form style="display: grid; gap: 20px;">
+                            <div class="grid grid-2">
+                                <input type="text" placeholder="First Name" style="padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0;" required id="first-name">
+                                <input type="text" placeholder="Last Name" style="padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0;" required id="last-name">
+                            </div>
+                            <input type="email" placeholder="Email Address" style="padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0;" required id="contact-email">
+                            <input type="url" placeholder="Website URL (Optional)" style="padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0;" id="contact-url">
+                            <select style="padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0;" required id="service-type">
+                                <option value="">Select Service</option>
+                                <option value="audit">Full Accessibility Audit</option>
+                                <option value="consulting">Inclusive UX Consulting</option>
+                                <option value="remediation">Remediation Support</option>
+                                <option value="vpat">VPAT Generation</option>
+                            </select>
+                            <textarea placeholder="Tell us about your project" style="padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0; height: 120px;" required id="contact-msg"></textarea>
+                            <button type="submit" class="btn btn-primary" style="padding: 15px;">Send Message <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Google Maps Section -->
+        <section class="section" style="padding: 0;">
+            <div style="width: 100%; height: 450px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; position: relative;">
+                <p style="color: var(--text-muted);">[Interactive Google Map Integration]</p>
+                <div style="position: absolute; bottom: 20px; left: 20px; background: white; padding: 20px; border-radius: 10px; box-shadow: var(--shadow-md);">
+                    <h4 style="margin-bottom: 5px;">AccessAudit HQ</h4>
+                    <p style="font-size: 12px; color: var(--text-muted);">123 Accessibility Way, San Francisco, CA</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: FAQ + CTA -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 60px;">
+                    <h2 class="section-title">Quick Questions</h2>
+                </div>
+                <div class="grid grid-2">
+                    <div class="card" data-reveal>
+                        <h4>How fast can you start?</h4>
+                        <p class="card-text">Usually within 5-7 business days of contract signing.</p>
+                    </div>
+                    <div class="card" data-reveal>
+                        <h4>Do you work globally?</h4>
+                        <p class="card-text">Yes, we work with clients worldwide via remote auditing and video consultations.</p>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 60px;" data-reveal>
+                    <h3>Ready to proceed?</h3>
+                    <a href="pricing.html" class="btn btn-outline" style="margin-top: 20px;">View Pricing Plans</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 AccessAudit. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/accessibility.js"></script>
+</body>
+</html>

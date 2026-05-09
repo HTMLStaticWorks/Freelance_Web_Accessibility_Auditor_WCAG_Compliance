@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Accessibility Solutions | Premium Audit Dashboard</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .gradient-bg {
+            background: radial-gradient(circle at 50% 50%, #f1f5f9 0%, #e2e8f0 100%);
+        }
+    </style>
+</head>
+<body class="premium-theme">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-universal-access"></i>
+                    <span>AccessAudit <span style="font-size: 12px; vertical-align: top; color: var(--accent);">PRO</span></span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" title="Toggle Theme">🌙</button>
+                    <button class="rtl-toggle" title="Toggle RTL">🌐</button>
+                    <a href="dashboard.html" class="btn btn-primary">Go to Dashboard</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Section 1: Premium Hero -->
+        <section class="section gradient-bg" style="padding-top: 200px; position: relative; overflow: hidden;">
+            <div class="container">
+                <div class="grid grid-2" style="align-items: center;">
+                    <div data-reveal>
+                        <h1 class="section-title" style="font-size: 4rem; line-height: 1.1;">The Future of <br><span style="color: var(--primary);">Inclusive</span> SaaS.</h1>
+                        <p style="font-size: 1.2rem; margin: 25px 0 40px; color: var(--text-muted);">
+                            Automate compliance tracking with our enterprise-grade dashboard while our experts handle the deep manual auditing. 
+                        </p>
+                        <div style="display: flex; gap: 20px;">
+                            <a href="register.html" class="btn btn-primary" style="padding: 15px 40px; border-radius: 50px;">Start Free Trial</a>
+                            <a href="services.html" class="btn btn-outline" style="padding: 15px 40px; border-radius: 50px;">Book Demo</a>
+                        </div>
+                    </div>
+                    <div data-reveal style="position: relative;">
+                        <!-- Generated Premium Hero Image -->
+                        <img src="assets/images/hero-premium.png" alt="Accessibility Analytics Dashboard" class="floating" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); width: 100%;">
+                        
+                        <!-- Decorative floating elements -->
+                        <div class="glass-card floating" style="position: absolute; top: -40px; right: -20px; padding: 15px; border-radius: 10px; width: 150px; animation-delay: 1s;">
+                            <span style="font-size: 10px; text-transform: uppercase;">Violations</span>
+                            <div style="font-weight: 700; color: var(--danger);">0 Detected</div>
+                        </div>
+                        <div class="glass-card floating" style="position: absolute; bottom: -30px; left: -40px; padding: 15px; border-radius: 10px; width: 180px; animation-delay: 2s;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-check-circle" style="color: var(--success);"></i>
+                                <span style="font-size: 12px;">VPAT Ready</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Metrics & Statistics -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-4 text-center">
+                    <div data-reveal>
+                        <div style="font-size: 3rem; font-weight: 800; color: var(--primary);">500+</div>
+                        <p style="color: var(--text-muted); font-weight: 500;">Audits Completed</p>
+                    </div>
+                    <div data-reveal>
+                        <div style="font-size: 3rem; font-weight: 800; color: var(--primary);">12M+</div>
+                        <p style="color: var(--text-muted); font-weight: 500;">Users Impacted</p>
+                    </div>
+                    <div data-reveal>
+                        <div style="font-size: 3rem; font-weight: 800; color: var(--primary);">0</div>
+                        <p style="color: var(--text-muted); font-weight: 500;">Legal Issues Post-Audit</p>
+                    </div>
+                    <div data-reveal>
+                        <div style="font-size: 3rem; font-weight: 800; color: var(--primary);">100%</div>
+                        <p style="color: var(--text-muted); font-weight: 500;">WCAG Compliance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Interactive Audit Workflow -->
+        <section class="section" style="background: #0f172a; color: white;">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 60px;">
+                    <span class="section-subtitle">The Platform</span>
+                    <h2 class="section-title" style="color: white; -webkit-fill-color: white;">Smart Audit Workflow</h2>
+                </div>
+                <div class="grid grid-4">
+                    <div class="glass-card" style="padding: 40px; border-radius: 20px; transition: 0.5s;" data-reveal>
+                        <div style="width: 50px; height: 50px; background: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Domain Scan</h3>
+                        <p style="color: #94a3b8; font-size: 14px; margin-top: 15px;">Automated crawlers map your entire site architecture for potential barriers.</p>
+                    </div>
+                    <div class="glass-card" style="padding: 40px; border-radius: 20px; transition: 0.5s;" data-reveal>
+                        <div style="width: 50px; height: 50px; background: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h3>Expert Review</h3>
+                        <p style="color: #94a3b8; font-size: 14px; margin-top: 15px;">Accessibility specialists perform manual testing on high-priority flows.</p>
+                    </div>
+                    <div class="glass-card" style="padding: 40px; border-radius: 20px; transition: 0.5s;" data-reveal>
+                        <div style="width: 50px; height: 50px; background: var(--success); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>Dev Integration</h3>
+                        <p style="color: #94a3b8; font-size: 14px; margin-top: 15px;">Export issues directly to GitHub or Jira with code fix recommendations.</p>
+                    </div>
+                    <div class="glass-card" style="padding: 40px; border-radius: 20px; transition: 0.5s;" data-reveal>
+                        <div style="width: 50px; height: 50px; background: var(--warning); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
+                            <i class="fas fa-file-shield"></i>
+                        </div>
+                        <h3>Continuous Monitoring</h3>
+                        <p style="color: #94a3b8; font-size: 14px; margin-top: 15px;">Stay compliant with ongoing scans as you push new features.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: VPAT & ADA Compliance Showcase -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2" style="align-items: center;">
+                    <div data-reveal>
+                        <span class="section-subtitle">Enterprise Ready</span>
+                        <h2 class="section-title">Scale with Confidence.</h2>
+                        <p style="margin-bottom: 30px;">Our platform generates industry-standard VPAT (Voluntary Product Accessibility Template) reports used by Fortune 500 companies and government agencies.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div style="padding: 20px; border: 1px solid #e2e8f0; border-radius: 10px;">
+                                <i class="fas fa-building" style="color: var(--primary); margin-bottom: 10px;"></i>
+                                <h4 style="margin-bottom: 5px;">Fortune 500</h4>
+                                <p style="font-size: 12px; color: var(--text-muted);">Trusted by leading global enterprises.</p>
+                            </div>
+                            <div style="padding: 20px; border: 1px solid #e2e8f0; border-radius: 10px;">
+                                <i class="fas fa-university" style="color: var(--primary); margin-bottom: 10px;"></i>
+                                <h4 style="margin-bottom: 5px;">Government</h4>
+                                <p style="font-size: 12px; color: var(--text-muted);">Section 508 & EN 301 549 standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-reveal>
+                        <img src="https://images.unsplash.com/photo-1551288049-bbbda5366991?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Data Analytics" style="border-radius: 20px; box-shadow: var(--shadow-lg);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Fix Recommendation Cards (4 cards) -->
+        <section class="section" style="background-color: #f8fafc;">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 60px;">
+                    <span class="section-subtitle">Instant Fixes</span>
+                    <h2 class="section-title">Common Accessibility Remediation</h2>
+                </div>
+                <div class="grid grid-4">
+                    <div class="card glass-card" data-reveal>
+                        <h3 class="card-title">Color Contrast</h3>
+                        <p class="card-text">Automated CSS adjustments to ensure 4.5:1 ratio for normal text.</p>
+                        <div class="card-footer">
+                            <span style="font-size: 12px; background: var(--primary-light); color: var(--primary); padding: 5px 10px; border-radius: 20px;">Low Effort</span>
+                        </div>
+                    </div>
+                    <div class="card glass-card" data-reveal>
+                        <h3 class="card-title">ARIA Labeling</h3>
+                        <p class="card-text">Dynamic injection of descriptive labels for interactive elements.</p>
+                        <div class="card-footer">
+                            <span style="font-size: 12px; background: var(--primary-light); color: var(--primary); padding: 5px 10px; border-radius: 20px;">Medium Effort</span>
+                        </div>
+                    </div>
+                    <div class="card glass-card" data-reveal>
+                        <h3 class="card-title">Focus Management</h3>
+                        <p class="card-text">Smart trap focus scripts for modals and complex navigation menus.</p>
+                        <div class="card-footer">
+                            <span style="font-size: 12px; background: var(--primary-light); color: var(--primary); padding: 5px 10px; border-radius: 20px;">High Impact</span>
+                        </div>
+                    </div>
+                    <div class="card glass-card" data-reveal>
+                        <h3 class="card-title">Alt Text Engine</h3>
+                        <p class="card-text">AI-powered image analysis to suggest descriptive alternative text.</p>
+                        <div class="card-footer">
+                            <span style="font-size: 12px; background: var(--primary-light); color: var(--primary); padding: 5px 10px; border-radius: 20px;">AI Powered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Enterprise CTA + Newsletter -->
+        <section class="section" style="background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; text-align: center; overflow: hidden; position: relative;">
+            <div class="container">
+                <div data-reveal>
+                    <h2 style="color: white; font-size: 3rem; margin-bottom: 20px;">Ready to be Inclusive?</h2>
+                    <p style="font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9;">Join 2,000+ businesses making the web accessible for everyone.</p>
+                    <div style="max-width: 600px; margin: 0 auto; background: rgba(255,255,255,0.1); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px);">
+                        <h4 style="color: white; margin-bottom: 20px;">Get Enterprise Pricing</h4>
+                        <form style="display: flex; flex-direction: column; gap: 15px;">
+                            <input type="email" placeholder="Work Email" style="padding: 15px; border-radius: 10px; border: none;" required>
+                            <button type="submit" class="btn" style="background: white; color: var(--primary); font-size: 18px; padding: 15px;">Contact Sales <i class="fas fa-rocket"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Background circles -->
+            <div style="position: absolute; top: -50px; left: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+            <div style="position: absolute; bottom: -50px; right: -50px; width: 300px; height: 300px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 25px;">
+                        <i class="fas fa-universal-access"></i>
+                        <span>AccessAudit</span>
+                    </a>
+                    <p>Dedicated to making the web accessible for everyone. We provide enterprise-level accessibility audits and remediation guidance.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services-details.html">WCAG Audits</a></li>
+                        <li><a href="services-details.html">ADA Compliance</a></li>
+                        <li><a href="services-details.html">VPAT Reports</a></li>
+                        <li><a href="services-details.html">Remediation</a></li>
+                        <li><a href="services-details.html">UX Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p style="color: #94a3b8; font-size: 14px; margin-bottom: 20px;">Subscribe to get the latest accessibility updates.</p>
+                    <form style="display: flex; gap: 5px;">
+                        <input type="email" placeholder="Email Address" style="padding: 10px; border-radius: var(--radius-sm); flex-grow: 1; background: rgba(255,255,255,0.05); color: white; border: 1px solid rgba(255,255,255,0.1);" required id="footer-email-2">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px;"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AccessAudit. All rights reserved. | <a href="coming-soon.html">Privacy Policy</a> | <a href="coming-soon.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/accessibility.js"></script>
+</body>
+</html>
