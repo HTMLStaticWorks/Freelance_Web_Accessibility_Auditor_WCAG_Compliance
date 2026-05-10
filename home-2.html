@@ -51,7 +51,7 @@
                 
                 <ul class="nav-links">
                     <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+                    <li><a href="home-2.html" class="nav-link active">Home 2</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="services.html" class="nav-link">Services</a></li>
                     <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
@@ -59,6 +59,13 @@
                     <li><a href="pricing.html" class="nav-link">Pricing</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                     <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li class="mobile-login">
+                        <a href="login.html" class="btn btn-outline" style="padding: 8px 15px; width: 100%; text-align: center;">Login</a>
+                    </li>
+                    <li class="mobile-toggle-wrapper">
+                        <button class="theme-toggle" title="Toggle Theme">🌙</button>
+                        <button class="rtl-toggle" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                    </li>
                 </ul>
 
                 <div class="nav-actions">
@@ -81,11 +88,11 @@
             <div class="container">
                 <div class="grid grid-2" style="align-items: center;">
                     <div data-reveal>
-                        <h1 class="section-title" style="font-size: 4rem; line-height: 1.1;">The Future of <br><span style="color: var(--primary);">Inclusive</span> SaaS.</h1>
+                        <h1 class="section-title hero-title" style="font-size: 4rem; line-height: 1.1;">The Future of <br><span style="color: var(--primary);">Inclusive</span> SaaS.</h1>
                         <p style="font-size: 1.2rem; margin: 25px 0 40px; color: var(--text-muted);">
                             Automate compliance tracking with our enterprise-grade dashboard while our experts handle the deep manual auditing. 
                         </p>
-                        <div style="display: flex; gap: 20px;">
+                        <div class="hero-btns" style="display: flex; gap: 20px;">
                             <a href="register.html" class="btn btn-primary" style="padding: 15px 40px; border-radius: 50px;">Start Free Trial</a>
                             <a href="services.html" class="btn btn-outline" style="padding: 15px 40px; border-radius: 50px;">Book Demo</a>
                         </div>
@@ -95,11 +102,11 @@
                         <img src="assets/images/hero-premium.png" alt="Accessibility Analytics Dashboard" class="floating" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); width: 100%;">
                         
                         <!-- Decorative floating elements -->
-                        <div class="glass-card floating" style="position: absolute; top: -40px; right: -20px; padding: 15px; border-radius: 10px; width: 150px; animation-delay: 1s;">
+                        <div class="glass-card floating floating-card-1" style="position: absolute; top: -40px; right: -20px; padding: 15px; border-radius: 10px; width: 150px; animation-delay: 1s;">
                             <span style="font-size: 10px; text-transform: uppercase;">Violations</span>
                             <div style="font-weight: 700; color: var(--danger);">0 Detected</div>
                         </div>
-                        <div class="glass-card floating" style="position: absolute; bottom: -30px; left: -40px; padding: 15px; border-radius: 10px; width: 180px; animation-delay: 2s;">
+                        <div class="glass-card floating floating-card-2" style="position: absolute; bottom: -30px; left: -40px; padding: 15px; border-radius: 10px; width: 180px; animation-delay: 2s;">
                             <div style="display: flex; align-items: center; gap: 10px;">
                                 <i class="fas fa-check-circle" style="color: var(--success);"></i>
                                 <span style="font-size: 12px;">VPAT Ready</span>

@@ -31,10 +31,12 @@ body.dark-mode .header.scrolled {
 body.dark-mode .card,
 body.dark-mode .stat-card,
 body.dark-mode .table-container,
-body.dark-mode .login-box {
+body.dark-mode .login-box,
+body.dark-mode .service-snapshot-card {
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
     background: #111111 !important;
 }
+
 
 /* Overriding hardcoded light backgrounds across all pages - Excluding heroes with images */
 body.dark-mode .section[style*="background"]:not([style*="url"]),
@@ -86,9 +88,17 @@ body.dark-mode .btn-outline:hover {
     color: #000000 !important;
 }
 
-body.dark-mode .nav-link,
+body.dark-mode .nav-link:not(.active),
 body.dark-mode .nav-item {
     color: #ffffff !important;
+}
+
+body.dark-mode .nav-link.active {
+    color: #60a5fa !important;
+}
+
+body.dark-mode .nav-link.active::after {
+    background-color: #60a5fa;
 }
 
 body.dark-mode .logo {
@@ -103,6 +113,7 @@ body.dark-mode .logo i {
 /* Ensuring all text is white on black background, including hardcoded colors */
 body.dark-mode p,
 body.dark-mode span:not(.btn),
+body.dark-mode strong,
 body.dark-mode label,
 body.dark-mode li,
 body.dark-mode td,
@@ -126,6 +137,7 @@ body.dark-mode .text-muted,
 body.dark-mode [style*="color"] {
     color: #ffffff !important;
 }
+
 
 /* Specific section overrides for background and text */
 body.dark-mode .section,
@@ -180,4 +192,18 @@ body.dark-mode [style*="background:#fff"],
 body.dark-mode [style*="background-color:#fff"] {
     background: #333333 !important;
     color: #ffffff !important;
+}
+
+/* Mobile Menu Dark Mode */
+body.dark-mode .nav-links {
+    background: rgba(0, 0, 0, 0.98) !important;
+    box-shadow: -15px 0 40px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .nav-links .nav-link {
+    border-bottom-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .nav-links .mobile-toggle-wrapper {
+    border-top-color: rgba(255, 255, 255, 0.1);
 }

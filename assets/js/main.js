@@ -21,43 +21,50 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Theme Toggle
-    const themeToggle = document.querySelector('.theme-toggle');
+    const themeToggles = document.querySelectorAll('.theme-toggle');
     const body = document.body;
     
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
+    const updateThemeButtons = (isDark) => {
+        themeToggles.forEach(toggle => {
+            toggle.innerHTML = isDark ? '☀️' : '🌙';
+        });
+    };
+
+    themeToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
             body.classList.toggle('dark-mode');
             const isDark = body.classList.contains('dark-mode');
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
-            themeToggle.innerHTML = isDark ? '☀️' : '🌙';
+            updateThemeButtons(isDark);
         });
-    }
+    });
 
     // RTL Toggle
-    const rtlToggle = document.querySelector('.rtl-toggle');
+    const rtlToggles = document.querySelectorAll('.rtl-toggle');
     const html = document.documentElement;
-    if (rtlToggle) {
-        rtlToggle.addEventListener('click', () => {
+    
+    rtlToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
             body.classList.toggle('rtl');
             const isRTL = body.classList.contains('rtl');
             html.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
             localStorage.setItem('rtl', isRTL ? 'true' : 'false');
-            rtlToggle.innerHTML = '<i class="fas fa-right-left"></i>';
         });
-    }
+    });
 
     // Initialize Preferences
     if (localStorage.getItem('theme') === 'dark') {
         body.classList.add('dark-mode');
-        if (themeToggle) themeToggle.innerHTML = '☀️';
+        updateThemeButtons(true);
+    } else {
+        updateThemeButtons(false);
     }
+    
     if (localStorage.getItem('rtl') === 'true') {
         body.classList.add('rtl');
         html.setAttribute('dir', 'rtl');
-        if (rtlToggle) rtlToggle.innerHTML = '<i class="fas fa-right-left"></i>';
     } else {
         html.setAttribute('dir', 'ltr');
-        if (rtlToggle) rtlToggle.innerHTML = '<i class="fas fa-right-left"></i>';
     }
 
     // Scroll Reveal

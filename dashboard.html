@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,18 @@
     <link rel="stylesheet" href="assets/css/dark-mode.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body class="dashboard-body">
     <!-- Sidebar Navigation -->
-    <aside class="sidebar">
-        <div class="sidebar-logo">
-            <i class="fas fa-universal-access"></i>
-            <span>AccessAudit</span>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <i class="fas fa-universal-access"></i>
+                <span>AccessAudit</span>
+            </div>
+            <button class="close-sidebar" id="closeSidebar"><i class="fas fa-times"></i></button>
         </div>
-        
+
         <nav class="sidebar-nav">
             <a href="#" class="nav-item active"><i class="fas fa-th-large"></i> <span>Overview</span></a>
             <a href="#" class="nav-item"><i class="fas fa-globe"></i> <span>My Domains</span></a>
@@ -25,25 +30,52 @@
             <a href="#" class="nav-item"><i class="fas fa-chart-pie"></i> <span>Compliance Analytics</span></a>
             <a href="#" class="nav-item"><i class="fas fa-tasks"></i> <span>Remediation Tasks</span></a>
             <a href="#" class="nav-item"><i class="fas fa-certificate"></i> <span>Certificates</span></a>
+
+            <div class="mobile-sidebar-controls">
+                <div class="mobile-actions">
+                    <button class="theme-toggle" title="Toggle Theme"
+                        style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: white; width: 40px; height: 40px; border-radius: 50%; cursor: pointer;">🌙</button>
+                    <button class="rtl-toggle" title="Toggle RTL"
+                        style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: white; width: 40px; height: 40px; border-radius: 50%; cursor: pointer;"><i
+                            class="fas fa-right-left"></i></button>
+                </div>
+                <div class="mobile-user-profile">
+                    <div class="avatar"
+                        style="width: 40px; height: 40px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">
+                        JD</div>
+                    <div class="mobile-user-info">
+                        <div style="font-weight: 700; font-size: 14px; color: white;">John Doe</div>
+                        <div style="font-size: 12px; color: #94a3b8;">Admin Account</div>
+                    </div>
+                </div>
+            </div>
         </nav>
 
         <div class="sidebar-footer">
             <a href="#" class="nav-item"><i class="fas fa-cog"></i> <span>Settings</span></a>
             <a href="#" class="nav-item"><i class="fas fa-question-circle"></i> <span>Support</span></a>
-            <a href="index.html" class="nav-item" style="color: var(--danger);"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+            <a href="index.html" class="nav-item" style="color: var(--danger);"><i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span></a>
         </div>
     </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
     <!-- Main Content -->
     <main class="main-dash">
         <header class="dash-header">
-            <div>
-                <h1 style="font-size: 1.5rem; margin-bottom: 5px;">Dashboard Overview</h1>
-                <p style="font-size: 14px; color: var(--text-muted);">Welcome back, Acme Corp Team!</p>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button class="hamburger-btn" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div>
+                    <h1 style="font-size: 1.5rem; margin-bottom: 5px;">Dashboard Overview</h1>
+                    <p style="font-size: 14px; color: var(--text-muted);">Welcome back, Acme Corp Team!</p>
+                </div>
             </div>
-            
+
             <div class="user-profile">
-                <button class="theme-toggle" title="Toggle Theme" style="background: white; border: 1px solid var(--dash-border); width: 40px; height: 40px; border-radius: 50%;">🌙</button>
+                <button class="theme-toggle" title="Toggle Theme"
+                    style="background: white; border: 1px solid var(--dash-border); width: 40px; height: 40px; border-radius: 50%;">🌙</button>
                 <button class="rtl-toggle" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
                 <div style="text-align: right;">
                     <div style="font-weight: 700; font-size: 14px;">John Doe</div>
@@ -58,74 +90,91 @@
             <!-- Accessibility Score Cards (4 cards) -->
             <div class="dash-grid">
                 <div class="stat-card">
-                    <span style="font-size: 12px; color: var(--text-muted); text-transform: uppercase;">Overall Score</span>
+                    <span style="font-size: 12px; color: var(--text-muted); text-transform: uppercase;">Overall
+                        Score</span>
                     <div class="stat-value" style="color: var(--success);">94.2%</div>
                     <div style="height: 4px; background: #eee; border-radius: 2px;">
                         <div style="width: 94%; height: 100%; background: var(--success); border-radius: 2px;"></div>
                     </div>
                 </div>
                 <div class="stat-card">
-                    <span style="font-size: 12px; color: var(--text-muted); text-transform: uppercase;">Active Violations</span>
+                    <span style="font-size: 12px; color: var(--text-muted); text-transform: uppercase;">Active
+                        Violations</span>
                     <div class="stat-value" style="color: var(--danger);">12</div>
-                    <span style="font-size: 12px; color: var(--danger);"><i class="fas fa-arrow-down"></i> 5 since last week</span>
+                    <span style="font-size: 12px; color: var(--danger);"><i class="fas fa-arrow-down"></i> 5 since last
+                        week</span>
                 </div>
                 <div class="stat-card">
-                    <span style="font-size: 12px; color: var(--text-muted); text-transform: uppercase;">Pages Scanned</span>
+                    <span style="font-size: 12px; color: var(--text-muted); text-transform: uppercase;">Pages
+                        Scanned</span>
                     <div class="stat-value">1,240</div>
                     <span style="font-size: 12px; color: var(--text-muted);">across 3 domains</span>
                 </div>
                 <div class="stat-card">
-                    <span style="font-size: 12px; color: var(--text-muted); text-transform: uppercase;">Compliance Level</span>
+                    <span style="font-size: 12px; color: var(--text-muted); text-transform: uppercase;">Compliance
+                        Level</span>
                     <div class="stat-value" style="font-size: 1.5rem; margin: 18px 0;">WCAG 2.1 AA</div>
                     <span style="font-size: 12px; color: var(--primary);">Targeting AAA</span>
                 </div>
             </div>
 
             <!-- Progress Tracker & Analytics -->
-            <div class="grid grid-2" style="margin-bottom: 40px; grid-template-columns: 1.5fr 1fr; display: grid; gap: 20px;">
+            <div class="grid grid-2"
+                style="margin-bottom: 40px; grid-template-columns: 1.5fr 1fr; display: grid; gap: 20px;">
                 <div class="table-container" style="padding: 25px;">
                     <h3 style="margin-bottom: 25px;">Remediation Progress</h3>
                     <div style="display: grid; gap: 20px;">
                         <div>
-                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 14px;">
+                            <div
+                                style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 14px;">
                                 <span>Color Contrast Fixes</span>
                                 <span>80%</span>
                             </div>
                             <div style="height: 8px; background: #f1f5f9; border-radius: 4px;">
-                                <div style="width: 80%; height: 100%; background: var(--primary); border-radius: 4px;"></div>
+                                <div style="width: 80%; height: 100%; background: var(--primary); border-radius: 4px;">
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 14px;">
+                            <div
+                                style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 14px;">
                                 <span>ARIA Labeling Improvements</span>
                                 <span>45%</span>
                             </div>
                             <div style="height: 8px; background: #f1f5f9; border-radius: 4px;">
-                                <div style="width: 45%; height: 100%; background: var(--primary); border-radius: 4px;"></div>
+                                <div style="width: 45%; height: 100%; background: var(--primary); border-radius: 4px;">
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 14px;">
+                            <div
+                                style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 14px;">
                                 <span>Keyboard Traps Resolved</span>
                                 <span>100%</span>
                             </div>
                             <div style="height: 8px; background: #f1f5f9; border-radius: 4px;">
-                                <div style="width: 100%; height: 100%; background: var(--success); border-radius: 4px;"></div>
+                                <div style="width: 100%; height: 100%; background: var(--success); border-radius: 4px;">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="table-container" style="padding: 25px; background: var(--primary); color: white;">
                     <h3 style="color: white; margin-bottom: 20px;">Quick VPAT Export</h3>
-                    <p style="font-size: 14px; margin-bottom: 25px; opacity: 0.9;">Generate and download your Voluntary Product Accessibility Template based on current audit data.</p>
-                    <button class="btn" style="background: white; color: var(--primary); width: 100%;"><i class="fas fa-file-download"></i> Download VPAT (PDF)</button>
-                    <button class="btn" style="background: rgba(255,255,255,0.1); color: white; width: 100%; margin-top: 10px; border: 1px solid white;">Share Report</button>
+                    <p style="font-size: 14px; margin-bottom: 25px; opacity: 0.9;">Generate and download your Voluntary
+                        Product Accessibility Template based on current audit data.</p>
+                    <button class="btn" style="background: white; color: var(--primary); width: 100%;"><i
+                            class="fas fa-file-download"></i> Download VPAT (PDF)</button>
+                    <button class="btn"
+                        style="background: rgba(255,255,255,0.1); color: white; width: 100%; margin-top: 10px; border: 1px solid white;">Share
+                        Report</button>
                 </div>
             </div>
 
             <!-- Submitted URLs Table -->
             <div class="table-container">
-                <div style="padding: 20px; border-bottom: 1px solid var(--dash-border); display: flex; justify-content: space-between; align-items: center;">
+                <div
+                    style="padding: 20px; border-bottom: 1px solid var(--dash-border); display: flex; justify-content: space-between; align-items: center;">
                     <h3 style="font-size: 1.1rem;">Recent Audit Scans</h3>
                     <button class="btn btn-primary" style="padding: 8px 15px; font-size: 12px;">New Audit Scan</button>
                 </div>
@@ -185,6 +234,10 @@
         const contentArea = document.getElementById('dashboard-content-area');
         const dashTitle = document.querySelector('.dash-header h1');
         const dashSub = document.querySelector('.dash-header p');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const closeSidebar = document.getElementById('closeSidebar');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
 
         const pages = {
             'Overview': {
@@ -307,16 +360,16 @@
                             <div class="stat-value">84</div>
                         </div>
                     </div>
-                    <div class="grid grid-2" style="margin-bottom: 40px; grid-template-columns: 2fr 1fr; display: grid; gap: 20px;">
-                        <div class="table-container" style="padding: 25px; height: 300px; display: flex; align-items: center; justify-content: center; background: #fafafa;">
+                    <div class="grid grid-2" style="margin-bottom: 40px; gap: 25px;">
+                        <div class="stat-card" style="height: 300px; display: flex; align-items: center; justify-content: center; background: #fafafa; padding: 25px;">
                             <div style="text-align: center; color: #ccc;">
                                 <i class="fas fa-chart-line fa-3x"></i>
                                 <p style="margin-top: 10px;">Compliance Trend Chart Placeholder</p>
                             </div>
                         </div>
-                        <div class="table-container" style="padding: 25px;">
-                            <h3>Issue Breakdown</h3>
-                            <ul style="list-style: none; padding: 0; margin-top: 20px;">
+                        <div class="stat-card" style="padding: 25px;">
+                            <h3 style="margin-bottom: 20px;">Issue Breakdown</h3>
+                            <ul style="list-style: none; padding: 0;">
                                 <li style="margin-bottom: 15px; display: flex; justify-content: space-between;"><span>Images (Alt text)</span><strong>45%</strong></li>
                                 <li style="margin-bottom: 15px; display: flex; justify-content: space-between;"><span>Navigation</span><strong>25%</strong></li>
                                 <li style="margin-bottom: 15px; display: flex; justify-content: space-between;"><span>Forms</span><strong>15%</strong></li>
@@ -424,13 +477,30 @@
             }
         };
 
+        function toggleSidebar() {
+            sidebar.classList.toggle('active');
+            sidebarOverlay.classList.toggle('active');
+            if (sidebar.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+
+        if (sidebarToggle) sidebarToggle.addEventListener('click', toggleSidebar);
+        if (closeSidebar) closeSidebar.addEventListener('click', toggleSidebar);
+        if (sidebarOverlay) sidebarOverlay.addEventListener('click', toggleSidebar);
+
         document.querySelectorAll('.nav-item').forEach(item => {
-            item.addEventListener('click', function(e) {
-                const pageName = this.querySelector('span').innerText.trim();
-                
+            item.addEventListener('click', function (e) {
+                const pageNameSpan = this.querySelector('span');
+                if (!pageNameSpan) return;
+
+                const pageName = pageNameSpan.innerText.trim();
+
                 if (pages[pageName]) {
                     e.preventDefault();
-                    
+
                     // Update Active State
                     document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
                     this.classList.add('active');
@@ -439,7 +509,14 @@
                     dashTitle.innerText = pages[pageName].title;
                     dashSub.innerText = pages[pageName].subtitle;
                     contentArea.innerHTML = pages[pageName].content;
-                    
+
+                    // Close sidebar on mobile after clicking
+                    if (window.innerWidth <= 1024) {
+                        sidebar.classList.remove('active');
+                        sidebarOverlay.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+
                     // Scroll to top of content
                     window.scrollTo(0, 0);
                 }
@@ -447,4 +524,5 @@
         });
     </script>
 </body>
+
 </html>

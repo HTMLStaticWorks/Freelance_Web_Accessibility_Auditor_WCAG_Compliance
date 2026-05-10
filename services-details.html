@@ -19,12 +19,19 @@
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="home-2.html" class="nav-link">Home 2</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="services.html" class="nav-link active">Services</a></li>
                     <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
 
                     <li><a href="pricing.html" class="nav-link">Pricing</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                     <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li class="mobile-login">
+                        <a href="login.html" class="btn btn-outline" style="padding: 8px 15px; width: 100%; text-align: center;">Login</a>
+                    </li>
+                    <li class="mobile-toggle-wrapper">
+                        <button class="theme-toggle" title="Toggle Theme">🌙</button>
+                        <button class="rtl-toggle" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                    </li>
                 </ul>
                 <div class="nav-actions">
                     <button class="theme-toggle" title="Toggle Theme">🌙</button>
@@ -43,7 +50,7 @@
             <div class="container" data-reveal>
                 <div style="max-width: 800px; margin: 0 auto;">
                     <span class="section-subtitle" style="color: #60a5fa;">Service Details</span>
-                    <h1 class="section-title" id="service-title" style="color: white; font-size: 3.8rem; margin-bottom: 25px;">Technical Accessibility Audit</h1>
+                    <h1 class="section-title hero-title" id="service-title" style="color: white; margin-bottom: 25px;">Technical Accessibility Audit</h1>
                     <p id="service-description" style="font-size: 1.25rem; color: #cbd5e1; line-height: 1.6;">Our most requested service. A comprehensive, human-led examination of your digital product's accessibility health.</p>
                 </div>
             </div>
@@ -63,7 +70,7 @@
                             We don't just scratch the surface. Our specialized approach combines expert manual testing with 
                             industry-leading tools to uncover every potential barrier in your digital infrastructure.
                         </p>
-                        <div style="display: flex; gap: 20px;">
+                        <div class="hero-btns" style="display: flex; gap: 20px;">
                             <a href="contact.html" class="btn btn-primary">Start Your Audit</a>
                             <a href="pricing.html" class="btn btn-outline">View Pricing</a>
                         </div>
@@ -79,36 +86,37 @@
                     <div data-reveal>
                         <h2 class="section-title">What's Included</h2>
                         <p style="margin-bottom: 20px;">The technical audit covers every aspect of the WCAG 2.1 AA success criteria. We don't just find issues; we provide the exact code fixes your developers need.</p>
-                        <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Semantic HTML Review</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Keyboard Nav Path</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> ARIA Role Accuracy</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Color Contrast Ratios</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Focus Trapping</li>
-                            <li><i class="fas fa-check" style="color: var(--success);"></i> Screen Reader UX</li>
+                        <ul class="service-features-list">
+                            <li><i class="fas fa-check"></i> Semantic HTML Review</li>
+                            <li><i class="fas fa-check"></i> Keyboard Nav Path</li>
+                            <li><i class="fas fa-check"></i> ARIA Role Accuracy</li>
+                            <li><i class="fas fa-check"></i> Color Contrast Ratios</li>
+                            <li><i class="fas fa-check"></i> Focus Trapping</li>
+                            <li><i class="fas fa-check"></i> Screen Reader UX</li>
                         </ul>
                     </div>
                     <div data-reveal>
-                        <div style="background: var(--primary-light); padding: 40px; border-radius: 20px;">
-                            <h4 style="margin-bottom: 15px; color: var(--primary);">Service Snapshot</h4>
-                            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.05);">
+                        <div class="service-snapshot-card">
+                            <h4>Service Snapshot</h4>
+                            <div class="snapshot-row">
                                 <span>Duration</span>
                                 <strong>2-3 Weeks</strong>
                             </div>
-                            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.05);">
+                            <div class="snapshot-row">
                                 <span>Compliance Level</span>
                                 <strong>WCAG 2.1 AA</strong>
                             </div>
-                            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.05);">
+                            <div class="snapshot-row">
                                 <span>Reporting</span>
                                 <strong>PDF + Dashboard</strong>
                             </div>
-                            <div style="display: flex; justify-content: space-between; padding: 10px 0;">
+                            <div class="snapshot-row last">
                                 <span>Dev Support</span>
                                 <strong>30 Days Incl.</strong>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>

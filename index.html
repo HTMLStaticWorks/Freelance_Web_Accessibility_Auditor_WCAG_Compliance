@@ -31,7 +31,7 @@
                 </a>
 
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
                     <li><a href="home-2.html" class="nav-link">Home 2</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="services.html" class="nav-link">Services</a></li>
@@ -40,6 +40,13 @@
                     <li><a href="pricing.html" class="nav-link">Pricing</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                     <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li class="mobile-login">
+                        <a href="login.html" class="btn btn-outline" style="padding: 8px 15px; width: 100%; text-align: center;">Login</a>
+                    </li>
+                    <li class="mobile-toggle-wrapper">
+                        <button class="theme-toggle" title="Toggle Theme">🌙</button>
+                        <button class="rtl-toggle" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                    </li>
                 </ul>
 
                 <div class="nav-actions">
@@ -59,16 +66,16 @@
     <main id="main-content">
         <!-- Section 1: Hero -->
         <section class="section hero"
-            style="min-height: 100vh; padding: 0; display: flex; align-items: center; background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; text-align: center; color: white;">
+            style="min-height: 100vh; padding: 80px 0 0; display: flex; align-items: center; background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; text-align: center; color: white;">
             <div class="container">
                 <div data-reveal style="max-width: 900px; margin: 0 auto;">
                     <span class="section-subtitle" style="color: #60a5fa;">Accessibility-First Compliance</span>
-                    <h1 class="section-title" style="font-size: 3.5rem; margin-bottom: 25px; color: white;">Inclusive Digital Experiences for Everyone.</h1>
+                    <h1 class="section-title hero-title" style="font-size: 3.5rem; margin-bottom: 25px; color: white;">Inclusive Digital Experiences for Everyone.</h1>
                     <p style="font-size: 1.2rem; margin-bottom: 40px; color: #cbd5e1; line-height: 1.6;">
                         Ensure your website is WCAG 2.1 AA compliant. We provide expert accessibility audits, screen
                         reader testing, and remediation guidance to help you reach every user.
                     </p>
-                    <div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 50px;">
+                    <div class="hero-btns" style="display: flex; gap: 20px; justify-content: center; margin-bottom: 50px;">
                         <a href="services.html" class="btn btn-primary" style="padding: 15px 40px;">Our Services <i
                                 class="fas fa-arrow-right" style="margin-left: 10px;"></i></a>
                         <a href="contact.html" class="btn btn-outline" style="padding: 15px 40px; background: rgba(255,255,255,0.1); border-color: white; color: white;">Free Consultation</a>
@@ -91,7 +98,7 @@
                     <span class="section-subtitle">Our Expertise</span>
                     <h2 class="section-title">Comprehensive Accessibility Services</h2>
                 </div>
-                <div class="grid grid-4" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="grid grid-3">
                     <!-- We need 4 or 6. Let's do 6. -->
                     <div class="card" data-reveal>
                         <img src="assets/images/wcag-audit.png" alt="WCAG 2.1 Audits" class="card-img-top">
@@ -323,8 +330,8 @@
         <!-- Section 6: CTA + Accessibility Score Checker -->
         <section class="section">
             <div class="container">
-                <div
-                    style="background: var(--primary); border-radius: var(--radius-lg); padding: 60px; color: white; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center;">
+                <div class="cta-grid"
+                    style="background: var(--primary); border-radius: var(--radius-lg); padding: 60px; color: white; display: grid; gap: 40px; align-items: center;">
                     <div data-reveal>
                         <h2 style="color: white; font-size: 2.5rem; margin-bottom: 20px;">Check Your Accessibility Score
                         </h2>
