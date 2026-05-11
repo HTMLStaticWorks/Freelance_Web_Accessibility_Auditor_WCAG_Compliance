@@ -639,8 +639,8 @@ select {
 }
 
 .gradient-bg {
-    padding-top: 150px !important;
-    padding-bottom: 80px !important;
+    padding-top: 150px;
+    padding-bottom: 80px;
 }
 
 /* About Page Tech Ecosystem */
