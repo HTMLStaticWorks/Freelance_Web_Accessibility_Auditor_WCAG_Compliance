@@ -210,3 +210,16 @@ body.dark-mode .nav-links .mobile-toggle-wrapper {
 body.dark-mode #analyze-btn {
     color: #000000 !important;
 }
+
+body.dark-mode .back-to-top {
+    background: #60a5fa;
+    color: #000000;
+    box-shadow: 0 4px 15px rgba(96, 165, 250, 0.4);
+}
+
+body.dark-mode .back-to-top:hover {
+    background: #ffffff;
+    color: #000000;
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+

@@ -93,6 +93,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Back to Top Button Logic
+    const backToTopBtn = document.getElementById('back-to-top');
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('active');
+            } else {
+                backToTopBtn.classList.remove('active');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
     // Password Visibility Toggle
     document.querySelectorAll('.password-toggle').forEach(toggle => {
         toggle.addEventListener('click', function() {
