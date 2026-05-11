@@ -224,6 +224,19 @@ select {
     -webkit-text-fill-color: transparent;
 }
 
+.hero-title {
+    background: none !important;
+    -webkit-text-fill-color: white !important;
+    color: white !important;
+}
+
+/* Home 2 / Premium Theme Override */
+.premium-theme .hero-title {
+    background: linear-gradient(135deg, var(--text-heading), var(--primary)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
 .section-subtitle {
     color: var(--primary);
     font-weight: 600;

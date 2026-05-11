@@ -207,3 +207,6 @@ body.dark-mode .nav-links .nav-link {
 body.dark-mode .nav-links .mobile-toggle-wrapper {
     border-top-color: rgba(255, 255, 255, 0.1);
 }
+body.dark-mode #analyze-btn {
+    color: #000000 !important;
+}
