@@ -75,7 +75,7 @@ h5,
 h6 {
     font-family: 'Outfit', sans-serif;
     color: var(--text-heading);
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.2;
 }
 
@@ -239,7 +239,7 @@ select {
 
 .section-subtitle {
     color: var(--primary);
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
     display: block;
@@ -281,6 +281,21 @@ select {
 .btn-outline:hover {
     background-color: var(--primary);
     color: var(--white);
+}
+
+.btn-white-always {
+    background: #ffffff !important;
+    color: var(--primary) !important;
+    border: 2px solid #ffffff !important;
+    transition: var(--transition) !important;
+}
+
+.btn-white-always:hover {
+    background: transparent !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3) !important;
 }
 
 /* Card Component */
@@ -608,13 +623,15 @@ select {
 
 
 .hero-btns {
-    flex-direction: column !important;
-    align-items: center !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
     gap: 15px !important;
 }
 
 .hero-btns .btn {
-    width: 100% !important;
+    width: auto !important;
+    min-width: 160px;
     max-width: 280px;
     white-space: nowrap !important;
     padding: 12px 20px !important;
