@@ -247,6 +247,7 @@ select {
 .premium-theme .hero-title {
     background: linear-gradient(135deg, var(--text-heading), var(--primary)) !important;
     -webkit-background-clip: text !important;
+    background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
 
