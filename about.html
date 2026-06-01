@@ -62,7 +62,7 @@
             <div class="container">
                 <div class="grid grid-2" style="align-items: center;">
                     <div data-reveal>
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Auditor at work" style="border-radius: var(--radius-lg);">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Auditor at work" style="border-radius: var(--radius-lg); max-height: 500px; width: 100%; object-fit: cover; object-position: top;">
                     </div>
                     <div data-reveal>
                         <h2 class="section-title">The Story Behind AccessAudit</h2>
@@ -73,15 +73,6 @@
             </div>
         </section>
 
-        <!-- Section 3: Accessibility Mission -->
-        <section class="section" style="background: var(--primary); color: white;">
-            <div class="container text-center">
-                <div data-reveal>
-                    <h2 class="section-title" style="color: white; -webkit-fill-color: white;">Our Mission</h2>
-                    <p style="font-size: 1.5rem; max-width: 800px; margin: 30px auto; line-height: 1.4;">"To ensure that digital experiences are a human right, not a privilege, by removing every technical barrier between people and information."</p>
-                </div>
-            </div>
-        </section>
 
         <!-- Section 4: Certifications & Skills -->
         <section class="section">
@@ -184,6 +175,125 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Section: Philosophy -->
+        <style>
+            .philosophy-float {
+                position: absolute; 
+                bottom: -30px; 
+                left: -30px; 
+                background: white; 
+                padding: 25px; 
+                border-radius: 15px; 
+                box-shadow: var(--shadow-md); 
+                max-width: 250px;
+                z-index: 10;
+            }
+            .philosophy-float-title { font-size: 2rem; color: var(--primary); font-weight: 800; margin-bottom: 10px; }
+            .philosophy-float-text { font-weight: 600; color: var(--text); }
+            @media (max-width: 768px) {
+                .philosophy-float {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 75%;
+                    max-width: 220px;
+                    padding: 15px;
+                    bottom: -30px;
+                    text-align: center;
+                }
+                .philosophy-float-title { font-size: 1.5rem; margin-bottom: 5px; }
+                .philosophy-float-text { font-size: 0.9rem; }
+                .philosophy-img-wrapper {
+                    margin-bottom: 50px;
+                }
+                .philosophy-grid {
+                    grid-template-columns: 1fr !important;
+                    gap: 40px !important;
+                }
+            }
+        </style>
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2 philosophy-grid" style="align-items: center; gap: 60px;">
+                    <div data-reveal="left">
+                        <span class="section-subtitle">Guiding Philosophy</span>
+                        <h2 class="section-title">Accessibility is a Journey, Not a Destination</h2>
+                        <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">
+                            Achieving WCAG compliance is a significant milestone, but true digital inclusion requires ongoing commitment. As the web evolves and your digital products grow, new barriers can unintentionally arise.
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px;">
+                            My goal is to empower your team to integrate accessibility into their daily workflows. By embedding inclusive design principles from the very start, we can prevent issues before they reach production and ensure a seamless experience for every single user, regardless of their abilities.
+                        </p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-check-circle" style="color: var(--success); font-size: 1.2rem;"></i>
+                                <span style="font-weight: 600;">Shift-left testing approach</span>
+                            </li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-check-circle" style="color: var(--success); font-size: 1.2rem;"></i>
+                                <span style="font-weight: 600;">Developer and designer training</span>
+                            </li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-check-circle" style="color: var(--success); font-size: 1.2rem;"></i>
+                                <span style="font-weight: 600;">Long-term compliance monitoring</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-reveal="right" style="position: relative;" class="philosophy-img-wrapper">
+                        <img src="assets/images/accessibility_auditor.png" alt="Person working on accessibility audit" style="border-radius: 20px; width: 100%; box-shadow: var(--shadow-lg);">
+                        <div class="philosophy-float">
+                            <div class="philosophy-float-title">100%</div>
+                            <div class="philosophy-float-text">Commitment to an inclusive web</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: My Approach -->
+        <section class="section" style="background-color: #f8fafc;">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 60px;">
+                    <span class="section-subtitle">Methodology</span>
+                    <h2 class="section-title">My Auditing Approach</h2>
+                    <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 1.6;">Combining automated tools with rigorous manual testing to ensure every user has a seamless experience.</p>
+                </div>
+                <div class="grid grid-4">
+                    <div class="glass-card" data-reveal style="padding: 40px 30px; border-radius: 20px; background: white; box-shadow: var(--shadow-sm); border-top: 4px solid var(--primary); transition: 0.3s;">
+                        <i class="fas fa-search" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 25px; display: block; text-align: center;"></i>
+                        <h3 style="margin-bottom: 15px;">1. Discovery & Scanning</h3>
+                        <p style="color: var(--text-muted); font-size: 15px; line-height: 1.6;">We start by understanding your core user journeys and running automated scans to identify structural issues.</p>
+                    </div>
+                    <div class="glass-card" data-reveal style="padding: 40px 30px; border-radius: 20px; background: white; box-shadow: var(--shadow-sm); border-top: 4px solid var(--accent); transition: 0.3s; transition-delay: 0.1s;">
+                        <i class="fas fa-hands-helping" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 25px; display: block; text-align: center;"></i>
+                        <h3 style="margin-bottom: 15px;">2. Manual AT Testing</h3>
+                        <p style="color: var(--text-muted); font-size: 15px; line-height: 1.6;">Automated tools only catch 30% of issues. I manually navigate your site using screen readers and keyboard-only methods.</p>
+                    </div>
+                    <div class="glass-card" data-reveal style="padding: 40px 30px; border-radius: 20px; background: white; box-shadow: var(--shadow-sm); border-top: 4px solid var(--success); transition: 0.3s; transition-delay: 0.2s;">
+                        <i class="fas fa-file-alt" style="font-size: 2.5rem; color: var(--success); margin-bottom: 25px; display: block; text-align: center;"></i>
+                        <h3 style="margin-bottom: 15px;">3. Actionable Reporting</h3>
+                        <p style="color: var(--text-muted); font-size: 15px; line-height: 1.6;">You receive a detailed report with exact code snippets, screenshots, and prioritization to guide your developers.</p>
+                    </div>
+                    <div class="glass-card" data-reveal style="padding: 40px 30px; border-radius: 20px; background: white; box-shadow: var(--shadow-sm); border-top: 4px solid var(--warning); transition: 0.3s; transition-delay: 0.3s;">
+                        <i class="fas fa-tools" style="font-size: 2.5rem; color: var(--warning); margin-bottom: 25px; display: block; text-align: center;"></i>
+                        <h3 style="margin-bottom: 15px;">4. Remediation Support</h3>
+                        <p style="color: var(--text-muted); font-size: 15px; line-height: 1.6;">I provide ongoing support to your development team, verifying fixes and answering technical questions until compliance is achieved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section: Call to Action -->
+        <section class="section" style="background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; text-align: center; position: relative; overflow: hidden;">
+            <div class="container" data-reveal style="position: relative; z-index: 2;">
+                <h2 style="color: white; font-size: 2.5rem; margin-bottom: 20px;">Ready to Make the Web More Inclusive?</h2>
+                <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 40px; opacity: 0.9; line-height: 1.6;">Let's work together to ensure your digital products are accessible to everyone, mitigate legal risks, and expand your audience.</p>
+                <a href="contact.html" class="btn btn-white-always" style="padding: 15px 40px; font-size: 1.1rem; border-radius: 50px; display: inline-flex; align-items: center; gap: 10px;">Get a Free Consultation <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <!-- Background circles -->
+            <div style="position: absolute; top: -50px; left: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+            <div style="position: absolute; bottom: -50px; right: -50px; width: 300px; height: 300px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
         </section>
     </main>
 
