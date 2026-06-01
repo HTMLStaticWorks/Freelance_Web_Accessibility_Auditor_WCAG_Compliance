@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 :root {
     /* Colors */
@@ -77,6 +77,18 @@ h6 {
     color: var(--text-heading);
     font-weight: 500;
     line-height: 1.2;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 300;
 }
 
 a {
@@ -221,6 +233,7 @@ select {
     margin-bottom: 20px;
     background: linear-gradient(135deg, var(--text-heading), var(--primary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -234,6 +247,7 @@ select {
 .premium-theme .hero-title {
     background: linear-gradient(135deg, var(--text-heading), var(--primary)) !important;
     -webkit-background-clip: text !important;
+    background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
 
@@ -674,45 +688,47 @@ select {
     transform: none !important;
     padding: 25px 10px !important;
 }
-    /* Contact Page Centering */
-    .contact-sidebar, .contact-form-container {
-        padding: 40px 20px !important;
-        text-align: center !important;
-    }
 
-    .contact-info-list {
-        justify-content: center !important;
-        padding-left: 0 !important;
-    }
-
-    .contact-info-list li {
-        justify-content: center !important;
-        text-align: left !important;
-        width: 100%;
-        max-width: 250px;
-        margin: 0 auto;
-    }
-
-    .contact-sidebar .social-links {
-        justify-content: center !important;
-    }
-
-    .contact-form-container form {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .contact-form-container input,
-    .contact-form-container select,
-    .contact-form-container textarea {
-        text-align: center !important;
-    }
-
-    .contact-form-container .btn {
-        width: 100% !important;
-        justify-content: center !important;
-    }
+/* Contact Page Centering */
+.contact-sidebar,
+.contact-form-container {
+    padding: 40px 20px !important;
+    text-align: center !important;
 }
+
+.contact-info-list {
+    justify-content: center !important;
+    padding-left: 0 !important;
+}
+
+.contact-info-list li {
+    justify-content: center !important;
+    text-align: left !important;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.contact-sidebar .social-links {
+    justify-content: center !important;
+}
+
+.contact-form-container form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-form-container input,
+.contact-form-container select,
+.contact-form-container textarea {
+    text-align: center !important;
+}
+
+.contact-form-container .btn {
+    width: 100% !important;
+    justify-content: center !important;
+}
+
 
 .contact-form-container {
     padding: 60px;
@@ -733,7 +749,7 @@ select {
         flex-direction: column !important;
         align-items: center !important;
     }
-    
+
     .contact-form-container form {
         width: 100% !important;
         max-width: 100% !important;
@@ -1092,7 +1108,8 @@ select {
     }
 
     .map-card {
-        bottom: 70px; /* Elevated to avoid covering Google logo/satellite buttons */
+        bottom: 70px;
+        /* Elevated to avoid covering Google logo/satellite buttons */
         left: 20px;
         right: 20px;
         padding: 20px;
@@ -1115,11 +1132,11 @@ select {
         padding: 15px;
         max-width: calc(100% - 20px);
     }
-    
+
     .map-card h4 {
         font-size: 1rem;
     }
-    
+
     .map-card p {
         font-size: 12px;
     }
